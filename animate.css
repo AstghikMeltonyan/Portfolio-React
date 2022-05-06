@@ -1,0 +1,71 @@
+.loader {
+    width: 115px;
+    height: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.redy_1,.greeny_1,
+.redy,.greeny {
+    width: 50px;
+    height: 50px;
+    background: plum;
+}
+
+.redy, .redy_1 {
+    animation: redy 6s ease-in-out infinite;  
+}
+
+.greeny,  .greeny_1 {
+    animation: redy_1 6s  ease-in-out infinite;  
+}
+
+.animation{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+
+@keyframes redy {
+    0%,
+    22%,
+    42% {
+        background: plum;
+        box-shadow: 0 .5rem 1rem rgb(185, 133, 185);
+    }
+
+    20%,
+    40%,
+    60% {
+        background: purple;
+    }
+
+    62%,
+    100% {
+        background: rgb(185, 133, 185);
+    }
+}
+
+@keyframes redy_1 {
+    0%,
+    22%,
+    42% {
+        background: purple;
+        box-shadow: 0 .5rem 1rem rgb(185, 133, 185);
+    }
+
+    20%,
+    40%,
+    60% {
+        background: plum;
+    }
+    
+    62%,
+    100% {
+        background: purple;
+    }
+}
+
+
